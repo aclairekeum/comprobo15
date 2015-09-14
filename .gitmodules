@@ -1,0 +1,3 @@
+[submodule "getting_familiar"]
+	path = getting_familiar
+	url = https://github.com/aclairekeum/getting_familiar.git
