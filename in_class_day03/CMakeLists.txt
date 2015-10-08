@@ -1,11 +1,12 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(robot_localization)
+project(in_class_day03)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
+  neato_node
   rospy
   sensor_msgs
   std_msgs
@@ -102,8 +103,8 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES robot_localization
-#  CATKIN_DEPENDS geometry_msgs rospy sensor_msgs std_msgs
+#  LIBRARIES in_class_day03
+#  CATKIN_DEPENDS geometry_msgs neato_node rospy sensor_msgs std_msgs
 #  DEPENDS system_lib
 )
 
@@ -119,24 +120,24 @@ include_directories(
 )
 
 ## Declare a C++ library
-# add_library(robot_localization
-#   src/${PROJECT_NAME}/robot_localization.cpp
+# add_library(in_class_day03
+#   src/${PROJECT_NAME}/in_class_day03.cpp
 # )
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
-# add_dependencies(robot_localization ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(in_class_day03 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
-# add_executable(robot_localization_node src/robot_localization_node.cpp)
+# add_executable(in_class_day03_node src/in_class_day03_node.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-# add_dependencies(robot_localization_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(in_class_day03_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(robot_localization_node
+# target_link_libraries(in_class_day03_node
 #   ${catkin_LIBRARIES}
 # )
 
@@ -155,7 +156,7 @@ include_directories(
 # )
 
 ## Mark executables and/or libraries for installation
-# install(TARGETS robot_localization robot_localization_node
+# install(TARGETS in_class_day03 in_class_day03_node
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
@@ -180,7 +181,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_robot_localization.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_in_class_day03.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
