@@ -4,3 +4,6 @@
 [submodule "warmup_project"]
 	path = warmup_project
 	url = https://github.com/acejang1994/warmup_project.git
+[submodule "robot_localization"]
+	path = robot_localization
+	url = https://github.com/acejang1994/robot_localization.git
