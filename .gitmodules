@@ -7,3 +7,6 @@
 [submodule "robot_localization"]
 	path = robot_localization
 	url = https://github.com/acejang1994/robot_localization.git
+[submodule "TextRecognition"]
+	path = TextRecognition
+	url = https://github.com/aclairekeum/TextRecognition.git
