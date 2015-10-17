@@ -1,6 +1,9 @@
 <launch>
   <arg name="host"/>
   <arg name="receive_port" default="5000"/>
+  <arg name="width" default="640"/>
+  <arg name="height" default="480"/>
+  <arg name="fps" default="30"/>
 
   <node pkg="nodelet" type="nodelet"
     name="standalone_nodelet" args="manager"
@@ -19,5 +22,8 @@
   <node pkg="gscam" type="setup_udp_stream.py" name="udp_negotiator" output="screen">
     <param name="receive_port" value="$(arg receive_port)"/>
     <param name="host" value="$(arg host)"/>
+    <param name="width" value="$(arg width)"/>
+    <param name="height" value="$(arg height)"/>
+    <param name="fps" value="$(arg fps)"/>
   </node>         
 </launch>
