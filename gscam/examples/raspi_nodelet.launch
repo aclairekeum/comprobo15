@@ -11,7 +11,7 @@
     args="load gscam/GSCamNodelet standalone_nodelet" 
     output="screen">
     <param name="camera_name" value="camera"/>
-    <param name="camera_info_url" value="package://gscam/examples/uncalibrated_parameters.ini"/>
+    <param name="camera_info_url" value="package://gscam/examples/camera_parameters.yaml"/>
     <param name="gscam_config" value="tcpclientsrc host=$(arg host) port=5001 ! gdpdepay ! rtph264depay ! avdec_h264 ! videoconvert "/>
   </node>                 
 </launch>
